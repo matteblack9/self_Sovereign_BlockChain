@@ -8,7 +8,9 @@
     "deploy": {
         "contentType": "tbears",
         "mode": "install",
-        "scoreParams": {}
+        "scoreParams": {
+            "designator": "hx2000000000000000000000000000000000000000"
+        }
     },
     "txresult": {},
     "transfer": {}
