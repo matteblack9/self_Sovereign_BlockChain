@@ -9,6 +9,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -22,17 +23,17 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
-<<<<<<< HEAD
-=======
     implementation 'com.multidots:fingerprint-auth:1.0.1'
     implementation 'com.github.kenglxn.QRGen:android:2.5.0'
+<<<<<<< HEAD
     implementation 'gun0912.ted:tedpermission:2.1.0'
-    implementation 'foundation.icon:icon-sdk:0.9.4'
->>>>>>> 6e70432f1d98d91194ce33aa0f51422082b58800
+=======
+>>>>>>> 14bcace... second android commit
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
     implementation 'com.github.bumptech.glide:glide:4.0.0'
     implementation 'com.android.support:design:26.1.0'
+    implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
 }
