@@ -16,3 +16,4 @@ class POST_Token(IconScoreBase):
     def hello(self) -> str:
         print(f'Hello, world!')
         return "Hello"
+

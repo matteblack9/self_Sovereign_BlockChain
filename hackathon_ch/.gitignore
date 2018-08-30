@@ -1,0 +1,8 @@
+.idea/
+bin/
+lib/
+share/
+include/
+.statedb/
+exc/
+tbears.log
