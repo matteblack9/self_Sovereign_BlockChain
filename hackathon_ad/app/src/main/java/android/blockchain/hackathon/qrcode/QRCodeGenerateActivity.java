@@ -1,5 +1,6 @@
-package android.blockchain.hackathon;
+package android.blockchain.hackathon.qrcode;
 
+import android.blockchain.hackathon.R;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +9,7 @@ import android.widget.ImageView;
 import net.glxn.qrgen.android.QRCode;
 
 
-public class QRCodeActivity extends AppCompatActivity {
+public class QRCodeGenerateActivity extends AppCompatActivity {
 
     ImageView QRImage;
 

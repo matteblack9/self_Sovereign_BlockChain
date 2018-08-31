@@ -5,12 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import foundation.icon.icx.IconService;
-import foundation.icon.icx.transport.http.HttpProvider;
+import java.io.File;
+import java.io.IOException;
+
 
 public class TestActivity extends AppCompatActivity {
-
     Button button;
+    File tempDir;
+    private String PASSWORD = "Pa55w0rd";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,20 +22,17 @@ public class TestActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                quickStart();
+                try {
+                    quickStart();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
+
     }
 
-    private void quickStart() {
-        IconService iconService = new IconService(new HttpProvider("https://13.125.227.83/api/ver3"));
+    private void quickStart() throws IOException {
 
-// Gets a block matching the block height.
-        try {
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 }

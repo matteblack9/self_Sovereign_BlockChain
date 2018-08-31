@@ -1,6 +1,7 @@
 package android.blockchain.hackathon.authDetail;
 
 import android.blockchain.hackathon.R;
+import android.blockchain.hackathon.TestActivity;
 import android.blockchain.hackathon.main.AuthRecyclerViewItem;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +16,6 @@ public class AuthDetailActivity extends AppCompatActivity {
 
         Intent get_intent = getIntent();
         AuthRecyclerViewItem item = (AuthRecyclerViewItem) get_intent.getSerializableExtra("item");
-
+        startActivity(new Intent(this, TestActivity.class));
     }
 }
