@@ -1,4 +1,5 @@
 from iconservice import *
+import json
 
 
 class POST_Token(IconScoreBase):
@@ -21,9 +22,14 @@ class POST_Token(IconScoreBase):
     @external(readonly=True)
     def get_my_claims(self) -> str:
         claims = self.__get_array_of(str(self.msg.sender))
+        result = []
         for e in claims:
             print(e)
-        return "get_my_claims"
+            result.append(e)
+
+        print(result)
+        print(json.dumps(result))
+        return json.dumps(result)
 
     @external
     def add_claim(self, claim: str):
@@ -34,35 +40,37 @@ class POST_Token(IconScoreBase):
         return ArrayDB(address, self.db, value_type=str)
 
     @external
-    def add_new_user(self, public_key: str):
-        if self.__users_address[str(self.msg.sender)] == 0: # not existed
+    def add_new_user(self, public_key: str) -> str:
+        if self.__users_address[str(self.msg.sender)] == "": # not existed
             self.__users_address[str(self.msg.sender)] = public_key
+            print("Add new user")
             return "OK"
         else:
+            print("FAILED")
             return "FAILURE"
 
     @external
-    def add_new_issuers(self, public_key: str):
-        if self.__issuers[str(self.msg.sender)] == 0: # not existed
+    def add_new_issuers(self, public_key: str) -> str:
+        if self.__issuers[str(self.msg.sender)] == "": # not existed
             self.__issuers[str(self.msg.sender)] = public_key
             return "OK"
         else:
             return "FAILURE"
 
     @external(readonly=True)
-    def get_user_public_key(self, user_address):
-        key = self.__users_address[str(user_address)]
-        if key == 0:
+    def get_user_public_key(self, user_address: str) -> str:
+        key = self.__users_address[user_address]
+        if str(key) == "":
             return "FAILURE"
         else:
-            return key
+            return str(key)
 
     @external(readonly=True)
-    def get_issuer_public_key(self, issuer_address):
-        key = self.__issuers[str(issuer_address)]
-        if key == 0:
+    def get_issuer_public_key(self, issuer_address: str) -> str:
+        key = self.__issuers[issuer_address]
+        if str(key) == "":
             return "FAILURE"
         else:
-            return key
+            return str(key)
 
 
