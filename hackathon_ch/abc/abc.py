@@ -2,7 +2,7 @@ from iconservice import *
 import json
 
 
-class POST_Token(IconScoreBase):
+class ABCToken(IconScoreBase):
 
     __USER_ADDRESS = 'user_address'
     __ISSUERS = 'issuers'
@@ -24,16 +24,13 @@ class POST_Token(IconScoreBase):
         claims = self.__get_array_of(str(self.msg.sender))
         result = []
         for e in claims:
-            print(e)
             result.append(e)
 
-        print(result)
         print(json.dumps(result))
         return json.dumps(result)
 
     @external
     def add_claim(self, claim: str):
-        print(claim)
         print(self.__get_array_of(str(self.msg.sender)).put(claim))
 
     def __get_array_of(self, address: str):

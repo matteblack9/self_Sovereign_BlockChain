@@ -1,15 +1,14 @@
 {
-    "uri": "http://127.0.0.1:9000/api/v3",
+    "uri": "http://13.125.227.83:9000/api/v3",
     "nid": "0x3",
     "keyStore": null,
     "from": "hxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-    "to": "cx0000000000000000000000000000000000000000",
+    "to": "cx58431154a72bc84a7c629c5d5c71587ddde9e2cb",
     "stepLimit": "0x300000",
     "deploy": {
-        "contentType": "tbears",
-        "mode": "install",
-        "scoreParams": {
-        }
+        "contentType": "zip",
+        "mode": "update",
+        "scoreParams": {}
     },
     "txresult": {},
     "transfer": {}
