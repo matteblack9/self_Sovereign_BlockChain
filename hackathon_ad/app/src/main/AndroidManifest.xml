@@ -3,6 +3,8 @@
     package="android.blockchain.hackathon">
 
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -21,10 +23,14 @@
         </activity>
         <activity android:name=".MainBaseActivity" />
         <activity android:name=".fingerPrint.FingerPrintAuthActivity" />
-        <activity android:name=".QRCodeActivity" />
+        <activity android:name=".qrcode.QRCodeGenerateActivity" />
         <activity android:name=".OCRAuthActivity" />
         <activity android:name=".authDetail.AuthDetailActivity" />
-        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".TestActivity" />
+        <activity android:name=".register.RegisterActivity" />
+        <activity android:name=".register.RegisterPasswordActivity" />
+        <activity android:name=".qrcode.QRCodeReadActivity" />
+        <activity android:name=".main.AuthListActivity"></activity>
     </application>
 
 </manifest>
