@@ -13,11 +13,11 @@ class POST_Token(IconScoreBase):
         self.__designator = VarDB(self.__DESIGNATOR, db, value_type=Address)
         self.__is_delivered = VarDB(self.__IS_DELIVERED, db, value_type=bool)
 
+
     def on_install(self, designator) -> None:
         super().on_install()
 
         self.__designator = designator
-
         self.__is_delivered = False
 
     def on_update(self) -> None:
@@ -47,7 +47,9 @@ class POST_Token(IconScoreBase):
             self.__is_delivered = True
             return True
 
+        
 
+    
 
 
 
