@@ -1,7 +1,10 @@
-package android.blockchain.hackathon;
+package android.blockchain.hackathon.fingerPrint;
 
 import android.animation.ArgbEvaluator;
 import android.animation.ValueAnimator;
+import android.blockchain.hackathon.MainBaseActivity;
+import android.blockchain.hackathon.R;
+import android.blockchain.hackathon.main.MainActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.hardware.fingerprint.FingerprintManager;
@@ -122,7 +125,7 @@ public class FingerPrintAuthActivity extends MainBaseActivity implements FingerP
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(FingerPrintAuthActivity.this, QRCodeActivity.class));
+                startActivity(new Intent(FingerPrintAuthActivity.this, MainActivity.class));
                 finish();
             }
         }, 1000);

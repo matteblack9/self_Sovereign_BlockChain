@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/custom_colorBackground"
-    android:padding="50dp"
+    android:padding="100dp"
     tools:context="android.blockchain.hackathon.SplashActivity">
 
     <ImageView

@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
+        <activity android:name=".main.MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,8 +20,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainBaseActivity" />
-        <activity android:name=".FingerPrintAuthActivity" />
-        <activity android:name=".QRCodeActivity"></activity>
+        <activity android:name=".fingerPrint.FingerPrintAuthActivity" />
+        <activity android:name=".QRCodeActivity" />
+        <activity android:name=".OCRAuthActivity" />
+        <activity android:name=".authDetail.AuthDetailActivity" />
+        <activity android:name=".TestActivity"></activity>
     </application>
 
 </manifest>

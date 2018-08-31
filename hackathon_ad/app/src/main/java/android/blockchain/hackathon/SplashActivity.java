@@ -1,5 +1,6 @@
 package android.blockchain.hackathon;
 
+import android.blockchain.hackathon.fingerPrint.FingerPrintAuthActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
