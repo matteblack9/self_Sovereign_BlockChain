@@ -5,7 +5,7 @@
    "params": {
        "version": "0x3",
        "from": "hx2000000000000000000000000000000000000000",
-       "to": "cx10d49da7db42c577c028fbdde4f9bd02a038cf7a",
+       "to": "cxa59b306c5c326086dbb7839ec643c4cf40acde5e",
        "stepLimit": "0x12345",
        "timestamp": "0x563a6cf330136",
        "nid": "0x3f",
