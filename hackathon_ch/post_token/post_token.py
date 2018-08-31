@@ -24,10 +24,7 @@ class POST_Token(IconScoreBase):
         # self.__designator.set(designator)
 
         self.__designator = designator
-<<<<<<< HEAD
-=======
-
-        self.__is_delivered = delivered
+        self.__is_delivered = False
 >>>>>>> 9cfb1b16c98d0d72c870bab79e57332eacf6a317
 
 =======
