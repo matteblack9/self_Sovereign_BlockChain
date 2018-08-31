@@ -1,0 +1,16 @@
+{
+   "jsonrpc": "2.0",
+   "method": "icx_call",
+   "id": 1,
+   "params": {
+      "version":"0x3",
+       "from": "hx2000000000000000000000000000000000000000",
+       "to": "cxa59b306c5c326086dbb7839ec643c4cf40acde5e",
+       "dataType": "call",
+       "data": {
+           "method": "get_my_claims",
+           "params": {
+           }
+       }
+   }
+}

@@ -9,8 +9,6 @@
         "contentType": "tbears",
         "mode": "install",
         "scoreParams": {
-            "designator": "hx2000000000000000000000000000000000000000",
-            "delivered": false
         }
     },
     "txresult": {},
