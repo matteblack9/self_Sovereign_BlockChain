@@ -48,7 +48,7 @@ protobuf==3.5.1
 ptyprocess==0.6.0
 pycparser==2.18
 pycryptodome==3.6.6
-Pygments==2.2.0
+Pygments==2.7.4
 requests==2.19.1
 sanic==0.7.0
 Sanic-Cors==0.9.4
